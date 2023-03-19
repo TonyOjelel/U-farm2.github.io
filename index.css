@@ -37,15 +37,24 @@ ul li a:hover{
 
 .title{
 	position: absolute;
-	top:50%;
+	top:40%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 
 .title h1{
 	color:#fff;
-	font-size: 45px;
+	font-size: 35px;
+	text-align: center;
 }
+
+.title p{
+	color:#fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+
 
 .button{
 	position: absolute;
