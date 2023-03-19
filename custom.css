@@ -6,7 +6,7 @@
 }
 
 header{
-	background-image: url('/images/farmer.jpg'); 
+	background-image: url('farmer.jpg'); 
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
