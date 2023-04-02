@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-  <title>AO Registration Form</title>
-  <link rel="stylesheet" href="/FO_registration.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AO Registration Form</title>
+    <link rel="stylesheet" href="/FO_registration.css"/>
+    <style>
+      html{
+          background-image: url('farmer.jpg'); 
+          background-size: cover;
+      }
+      *{
+          margin: 0;
+          padding: 0;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+</style>
 </head>
-<h1>AO Registration Form</h1>
-<form id="regForm" name="register" onsubmit="return Validate();">
-  <label for="fo_name">FO Name:</label
-  ><input id="fo_name" type="text" name="fo_name" /><small
-    id="fo_name_err"
-  ></small
-  ><br /><label for="ward">Ward Represented:</label
-  ><input id="ward" type="text" name="ward" /><small id="ward_err"></small
-  ><br /><label for="fo_number">Unique FO Number:</label
-  ><input id="fo_number" type="text" name="fo_number" /><small
-    id="fo_number_err"
-  ></small
-  ><br /><label for="registration_date">Date of Registration:</label
-  ><input
-    id="registration_date"
-    type="date"
-    name="registration_date"
-  /><br /><label for="gender">Gender:</label
-  ><input id="male" type="radio" name="gender" value="male" /><label for="male"
-    >Male</label
-  ><input id="female" type="radio" name="gender" value="female" /><label
-    for="female"
-    >Female</label
-  ><small id="gender_err"></small><br /><label for="dob">Date of Birth:</label
-  ><input id="dob" type="date" name="dob" /><br /><label for="activities"
-    >Activities Involved:</label
-  ><textarea id="activities" name="activities"></textarea
-  ><small id="activities_err"></small><br /><label for="nin">NIN Number:</label
-  ><input id="nin" type="text" name="nin" /><small id="nin_err"></small
-  ><br /><label for="directions">Directions to Home:</label
-  ><textarea id="directions" name="directions"></textarea
-  ><small id="directions_err"></small><br /><label for="residence_type"
-    >Residence Type:</label
-  ><select id="residence_type" name="residence_type">
-    <option value="">--Select--</option>
-    <option value="Own">Own</option>
-    <option value="Rent">Rent</option>
-    <option value="Other">Other</option></select
-  ><br /><label for="period_of_stay">Period of Stay in Ward (in years):</label
-  ><input id="period_of_stay" type="number" name="period_of_stay" /><small
-    id="period_of_err"
-  ></small
-  ><br /><button>Submit</button>
-</form>
-<!-- <script src="./regFormValidation.js"></script>-->
-<script src="/FOregistraction.js"></script>
+<body>
+      <h1>Agricultural Officer Registration Form</h1>
+      <form id="regForm" name="register" onsubmit="return Validate();">
+          <label for="fo_name">FarmerOne Name:</label>
+              <input id="fo_name" type="text" name="fo_name"/>
+                  <small id="fo_name_err"></small><br/>
+          <label for="ward">Ward Represented:</label>
+              <input id="ward" type="text" name="ward"/>
+                  <small id="ward_err"></small><br/>
+          <label for="fo_number">Unique FO Number:</label>
+              <input id="fo_number" type="text" name="fo_number"/>
+                  <small id="fo_number_err"></small><br/>
+          <label for="registration_date">Date of Registration:</label>
+              <input id="registration_date" type="date" name="registration_date"/><br>
+          <label for="gender">Gender:</label>
+              <input id="male" type="radio" name="gender" value="male"/><label for="male">Male</label>
+              <input id="female" type="radio" name="gender" value="female"/>
+              <label for="female">Female</label>
+                  <small id="gender_err"></small><br/>
+              <label for="dob">Date of Birth:</label>
+              <input id="dob" type="date" name="dob" /><br /><label for="activities">Activities Involved:</label>
+              <textarea id="activities" name="activities"></textarea>
+                  <small id="activities_err"></small><br /><label for="nin">NIN Number:</label>
+              <input id="nin" type="text" name="nin" /><small id="nin_err"></small><br/>
+              <label for="directions">Directions to Home:</label>
+              <textarea id="directions" name="directions"></textarea>
+                  <small id="directions_err"></small><br />
+              <label for="residence_type">Residence Type:</label>
+              <select id="residence_type" name="residence_type">
+                  <option value="">--Select--</option>
+                  <option value="Own">Own</option>
+                  <option value="Rent">Rent</option>
+                  <option value="Other">Other</option>
+              </select><br/>
+              <label for="period_of_stay">Period of Stay in Ward (in years):</label>
+              <input id="period_of_stay" type="number" name="period_of_stay"/>
+                  <small id="period_of_err"></small><br/>
+              <button>Submit</button>
+      </form>
+    <!-- <script src="./regFormValidation.js"></script>-->
+      <script src="/FOregistraction.js"></script>
+</body>
+</html>
